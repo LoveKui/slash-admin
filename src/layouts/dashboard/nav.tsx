@@ -63,7 +63,7 @@ export default function Nav(props: Props) {
       }
       setSelectedKeys([pathname]);
     }
-  }, [menuList,pathname, matches, collapsed, themeLayout]);
+  }, [menuList, pathname, matches, collapsed, themeLayout]);
 
   useEffect(() => {
     const menuRoutes = menuFilter(permissionRoutes);
@@ -163,9 +163,10 @@ export default function Nav(props: Props) {
           openKeys={openKeys}
           onOpenChange={onOpenChange}
           onClick={onClick}
-          style={menuStyle}
+          // style={menuStyle}
           inlineCollapsed={collapsed}
-          inlineIndent={50}
+          inlineIndent={20}
+          // theme="dark"
         />
       </Scrollbar>
     </div>
